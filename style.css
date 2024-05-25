@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+@font-face {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    src: url(./assets/fonts/Poppins-Italic.ttf);
+    font-weight: 300;
+}
+
+main {
+    width: 750px;
+    height: 610px;
+    background-color: #ffff;
+    border-radius: 25px;
+    border-bottom-right-radius: 150px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.date-input {
+
+    font-family: 'Poppins';
+    font-weight: 100;
+    margin-top: 25px;
+    margin-left: 40px;
+    height: 170px;
+    width: 650px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #b8b8b8;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.data-input {
+    /* border: 1px solid; */
+    width: 190px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.data-input h3 {
+    /* margin-left: 20px; */
+    font-size: 17px;
+
+}
+
+input {
+    /* margin-left: 20px; */
+    font-size: 25px;
+    padding-left: 15px;
+    display: block;
+    width: 160px;
+    height: 70px;
+    border-radius: 8px;
+    font-weight: bold;
+    outline-color: hsl(259, 100%, 65%);
+    border: 1px solid #898989; 
+}
+
+.days {
+    color: #898989;
+}
+.months {
+    color: #898989;
+}
+.years {
+    color: #898989;
+}
+
+.subject_invalid {
+    color: hsl(0, 100%, 67%);
+}
+
+
+.border_invalid {
+    border: 2px solid hsl(0, 100%, 67%)
+}
+
+input:hover {
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+.btn {
+    /* grid-rows: 1/2; */
+    width: fit-content;
+    height: fit-content;
+}
+
+.btn-enter {
+    background-color: hsl(259, 100%, 65%);
+    height: 80px;
+    padding: 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 200px;
+    cursor: pointer;
+}
+
+img:hover {
+    background-color: #000;
+}
+
+.total {
+    /* border: 1px solid; */
+    height: 300px;
+    width: fit-content;
+    margin-left: 20px;
+    text-align: left;
+    margin-top: 30px;
+
+}
+
+.results h1 {
+    font-family: 'Poppins';
+    font-size: 80px;
+    font: 400;
+}
+
+.results span {
+    color: hsl(259, 100%, 65%);
+}
+
+.hidden {
+    display: none;
+}
+
+.invalid {
+    color: hsl(0, 100%, 67%);
+    font-weight: 300;
+}
+
+@media screen and (max-width: 620px) and (min-width: 250px) {
+    main {
+        width: 280px;
+        height: 340px;
+        background-color: #ffff;
+        border-radius: 15px;
+        border-bottom-right-radius: 100px;
+        position: absolute;
+        transform: translate(2%,2%);
+        top: 17%;
+        left: 12%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .date-input {
+        border: none;
+        font-family: 'Poppins';
+        font-weight: 100;
+        margin-top: 15px;
+        margin-left: 20px;
+        height: 120px;
+        width: 240px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #b8b8b8;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .data-input {
+        /* border: 1px solid;  */
+        text-align: center;
+    }
+
+    .data-input h3 {
+        /* margin-left: 20px; */
+        font-size: 9px;
+
+    }
+
+    input {
+        margin-left: 17px;
+        font-size: 8px;
+        padding-left: 19px;
+        /* text-align: center; */
+        /* margin-left: 20px; */
+        display: block;
+        width: 50px;
+        height: 20px;
+        border-radius: 1px;
+        font-weight: bold;
+    }
+
+    .invalid {
+        font-size: 9px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .btn {
+        /* grid-rows: 1/2; */
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .btn-enter {
+        background-color: hsl(259, 100%, 65%);
+        height: 45px;
+        padding: 10px;
+        border-radius: 50px;
+        position: absolute;
+        top: 32.5%;
+        left: 42%;
+        cursor: pointer;
+    }
+
+    img:hover {
+        background-color: #000;
+    }
+
+    .total {
+        /* border: 1px solid; */
+        height: 100px;
+        width: fit-content;
+        margin-left: 20px;
+        text-align: left;
+        /* margin-top: 30px; */
+
+    }
+
+    .results h1 {
+        font-family: 'Poppins';
+        font-size: 35px;
+        font: 400;
+    }
+
+    .attribution {
+        position: absolute;
+        top: 90%;
+        left: 19%;
+        font-size: 7px;
+    }
+}
